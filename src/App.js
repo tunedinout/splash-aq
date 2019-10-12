@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
 import {HeaderBar,SideBar,Cards} from 'react-dark-elixir'
+import './App.css';
 import {createHashHistory} from 'history'
 var history = createHashHistory()
 
@@ -54,20 +54,64 @@ class App extends React.Component {
   render(){
     const showSidebar = this.state.showSidebar
     return (
-    <div className="rde-main-container">
-          <HeaderBar items={items}
-                    toggleSidebar={() => this.setState({showSidebar: !showSidebar})}
-                    active={this.state.active}
-                    onChange={(item) => {history.push(item.uri);this.setState({active: item.name})}}
-                    user={"Kunal"}/>
-        <div className="rde-content-container">
-          <SideBar items={sideItems}
-                    showSidebar={this.state.showSidebar}
-                    active={this.state.active}
-                    onChange={(item) => {history.push(item.uri);this.setState({active: item.name})}}/>
-          <Cards  itemName = {"Fish"}
-                  itemPrice = {"10"} 
-                  itemDetails = {"Detailed Description is here. Please provide more details bla bla bla bla"} />
+    <div className="content-item-container">
+      <div className="main-container">
+            <HeaderBar
+                      // items={items}
+                      toggleSidebar={() => this.setState({showSidebar: !showSidebar})}
+                      active={this.state.active}
+                      onChange={(item) => {history.push(item.uri);this.setState({active: item.name})}}
+                      user={"Kunal"}/>
+          <div className="content-container">
+            <SideBar items={sideItems}
+                      showSidebar={this.state.showSidebar}
+                      active={this.state.active}
+                      onChange={(item) => {history.push(item.uri);this.setState({active: item.name})}}/>
+            {/* <Cards  itemName = {"Fish"}
+                    itemPrice = {"10"} 
+                    itemDetails = {"Detailed Description is here. Please provide more details bla bla bla bla"} /> */}
+            <div className={"cards-container"}>
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+              <Cards  itemName = {"Air Pump"}
+                      itemPrice = {"130"} 
+                      itemDetails = {"6W air pump to supply fresh air in tanks. With the help of diffuser (air stone) it creates agitation in the tank."} />
+            </div>
+          </div>
         </div>
       </div>
     );

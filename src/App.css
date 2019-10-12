@@ -21,14 +21,78 @@
   color: #09d3ac;
 }
 
-.rde-main-container {
+/* .rde-headerbar {
+  position: fixed;
+}
+
+.rde-sidebar{
+  position: fixed;
+} */
+
+.main-container {
   display: flex;
   flex-flow: column;
   height: 100vh;
+  width: 100%;
 }
 
-.rde-content-container {
+.content-container {
   display: flex;
   flex-flow: row;
   flex: 1 1 auto;
+  height: 100%;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  position: relative;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+@media only screen and (min-width: 300px) {
+  .rde-cards-container {
+    width: 50%;
+  }
+  .rde-sidebar{
+    width: 50%;
+  }
+  .rde-sidebar.active{
+    margin-left: -50%;
+  }
+  .rde-sidebar.active ~ .cards-container .rde-cards-container{
+    width: 33.3%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .rde-cards-container {
+    width: 33.3%;
+  }
+  .rde-sidebar {
+    width: 33.3%;
+  }
+  .rde-sidebar.active{
+    margin-left: -33.3%;
+  }
+  .rde-sidebar.active ~ .cards-container .rde-cards-container{
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  .rde-cards-container {
+    width: 25%;
+  }
+  .rde-sidebar {
+    width: 25%;
+  }
+  .rde-sidebar.active{
+    margin-left: -25%;
+  }
+  .rde-sidebar.active ~ .cards-container .rde-cards-container{
+    width: 20%;
+  }
 }
