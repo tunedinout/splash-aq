@@ -2,12 +2,14 @@
   "name": "splash-aq",
   "version": "0.1.0",
   "private": true,
+  "repository": "kunalnitt/splash-aq",
+  "homepage" : "http://kunalnitt.github.io/splash-aq",
   "dependencies": {
     "history": "^4.10.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
     "react-scripts": "3.2.0",
-    "react-dark-elixir": "3.0.0"
+    "react-dark-elixir": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
