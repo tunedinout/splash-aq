@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "repository": "kunalnitt/splash-aq",
-  "homepage" : "http://kunalnitt.github.io/splash-aq",
+  "homepage": "http://kunalnitt.github.io/splash-aq",
   "dependencies": {
     "history": "^4.10.1",
     "react": "^16.10.2",
