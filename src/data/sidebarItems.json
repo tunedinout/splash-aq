@@ -1,0 +1,25 @@
+[{
+    "name": "Home1",
+    "uri": "/home2"
+  },{
+    "name": "Items",
+    "list": [{
+      "name": "Item1",
+      "uri": "/item1"
+    },{
+      "name": "Item2",
+      "uri": "/item2"
+    },{
+      "name": "Item3",
+      "uri": "/item3"
+    }]
+  },{
+    "name": "Pages",
+    "list": [{
+      "name": "Page1",
+      "uri": "page1"
+    },{
+      "name": "Page2",
+      "uri": "page2"
+    }]
+  }]
