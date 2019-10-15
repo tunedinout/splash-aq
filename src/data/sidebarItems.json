@@ -16,11 +16,11 @@
   },{
     "name": "Air Pumps",
     "list": [{
-      "name": "Single Nozzle",
-      "uri": "/singlenozzle"
+      "name": "Single",
+      "uri": "/single"
     },{
-      "name": "Double Nozzle",
-      "uri": "/doublenozzle"
+      "name": "Double",
+      "uri": "/double"
     }]
   },{
     "name": "Filters",
@@ -40,20 +40,20 @@
   },{
     "name": "Foods",
     "list": [{
-      "name": "Fish Food",
-      "uri": "/fishfood"
+      "name": "Fish",
+      "uri": "/fish"
     },{
-      "name": "Turtle Food",
-      "uri": "/turtlefood"
+      "name": "Turtle",
+      "uri": "/turtle"
     },{
-      "name": "Dog Food",
-      "uri": "/dogfood"
+      "name": "Dog",
+      "uri": "/dog"
     },{
-      "name": "Cat Food",
-      "uri": "/catfood"
+      "name": "Cat",
+      "uri": "/cat"
     },{
-      "name": "Bird Food",
-      "uri": "/birdfood"
+      "name": "Bird",
+      "uri": "/bird"
     }]
   },{
     "name": "Lights",
