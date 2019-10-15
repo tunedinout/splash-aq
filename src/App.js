@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import logo from './logo.jpeg';
 import {HeaderBar,SideBar,Cards,SearchBar} from 'react-dark-elixir'
 import cardItems from './data/cardItems.json'
 import headerItems from './data/headerItems.json'
@@ -38,7 +38,8 @@ class App extends React.Component {
       <div className="main-container">
             <HeaderBar
                       // items={items}
-                      toggleSidebar={() => this.setState({showSidebar: !showSidebar})}
+                      // toggleSidebar={() => this.setState({showSidebar: !showSidebar})}
+                      logo={logo}
                       active={this.state.active}
                       onChange={(item) => {history.push(item.uri);this.setState({active: item.name})}}
                       user={"Kunal"}/>
@@ -52,7 +53,9 @@ class App extends React.Component {
                     itemDetails = {"Detailed Description is here. Please provide more details bla bla bla bla"} /> */}
             <div className={"view-container"}>
             <div className={"searchbar-container"}>
-              <SearchBar inputItems={cardItems} handleInputChange={this.handleInputChange} />
+              <SearchBar 
+                  toggleSidebar={() => this.setState({showSidebar: !showSidebar})}
+                  inputItems={cardItems} handleInputChange={this.handleInputChange} />
             </div>
             <div className={"cards-container"}>
               {this.state.filteredItems.map(function(filteredItem){
