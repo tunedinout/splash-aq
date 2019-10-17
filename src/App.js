@@ -4,7 +4,7 @@ import {HeaderBar,SideBar,Cards,SearchBar} from 'react-dark-elixir'
 import cardItems from './data/cardItems.json'
 import headerItems from './data/headerItems.json'
 import sidebarItems from './data/sidebarItems.json'
-import '../node_modules/react-dark-elixir/build/themes/rde.light.css'
+import '../node_modules/react-dark-elixir/build/themes/rde.oceanblack.css'
 import './App.css';
 import {createHashHistory} from 'history'
 var history = createHashHistory()
