@@ -2,10 +2,13 @@ const HtmlWebpackPlugin = require("html-webpack-plugin")
 var path = require('path');
 module.exports = {
   mode: 'production',
-  entry: ["babel-polyfill", "./src/index.js"],
+  entry: ['@babel/polyfill', "./src/index.js"],
   output: {
     path: path.resolve(__dirname, 'build'),
-    filename: 'index.js',
+    filename: 'index.js'
+  },
+  resolve: {
+    extensions: ['.js', '.jsx']
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -16,14 +19,22 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/,
+        use: [
+          {
+            loader: "html-loader"
+          }
+        ]
+      },
+      {
         test: /\.js$/,
         include: path.resolve(__dirname, 'src'),
         exclude: /(node_modules|bower_components|build)/,
         use: {
           loader: 'babel-loader',
-          options: {
-            presets: ['env']
-          }
+          // options: {
+          //   presets: ["env", "react"]
+          // }
         }
       },
       {
