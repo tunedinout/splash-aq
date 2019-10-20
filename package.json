@@ -26,7 +26,7 @@
     "css-loader": "^3.2.0"
   },
   "scripts": {
-    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "start": "webpack-dev-server --config webpack.prod.config.js",
     "build": "webpack --config webpack.prod.config.js"
   }
 }
