@@ -1,34 +1,32 @@
 {
   "name": "splash-aq",
-  "version": "0.1.0",
+  "version": "1.1.0",
   "private": true,
   "repository": "kunalnitt/splash-aq",
   "dependencies": {
     "history": "^4.10.1",
     "react": "^16.10.2",
-    "react-dark-elixir": "^3.1.0",
-    "react-dom": "^16.10.2",
-    "react-scripts": "3.2.0"
+    "react-dark-elixir": "3.3.1",
+    "react-dom": "^16.10.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "copy-webpack-plugin": "^5.0.4",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.2",
+    "style-loader": "^1.0.0",
+    "file-loader": "^4.2.0",
+    "webpack": "^4.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "css-loader": "^3.2.0"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "start": "webpack-dev-server --config webpack.dev.config.js",
+    "build": "webpack --config webpack.prod.config.js"
   }
 }
