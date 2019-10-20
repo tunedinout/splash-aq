@@ -7,6 +7,12 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js',
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: "./src/index.html"
+    })
+  ],
   module: {
     rules: [
       {
@@ -21,8 +27,8 @@ module.exports = {
         }
       },
       {
-        test:/\.css$/,
-        use:['style-loader','css-loader']
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg|jpeg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -37,11 +43,6 @@ module.exports = {
         ]
       }
     ]
-  },
-  plugins: [
-    new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "./src/index.html"
-    })
-  ]
+  }
+
 };
