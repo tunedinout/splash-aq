@@ -6,7 +6,6 @@ frontend:
         - node -v
         - npm --version
         - npm ci
-        - npm i -g webpack
     build:
       commands:
         - npm run build

@@ -1,5 +1,8 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 var path = require('path');
+
+console.log('build started');
+
 module.exports = {
   mode: 'production',
   entry: "./src/index.js",
@@ -7,9 +10,7 @@ module.exports = {
     path: path.resolve(__dirname, 'build'),
     filename: 'index.js'
   },
-  resolve: {
-    extensions: ['.js', '.jsx']
-  },
+
   plugins: [
     new HtmlWebpackPlugin({
       filename: "index.html",
