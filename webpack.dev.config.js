@@ -21,8 +21,8 @@ module.exports = {
         }
       },
       {
-        test:/\.css$/,
-        use:['style-loader','css-loader']
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader']
       },
       {
         test: /\.(woff(2)?|ttf|eot|svg|jpeg)(\?v=\d+\.\d+\.\d+)?$/,
@@ -42,7 +42,7 @@ module.exports = {
     publicPath: "/",
     contentBase: "./src",
     hot: true,
-    inline:true,
+    inline: true,
     port: 3000
   },
   plugins: [
