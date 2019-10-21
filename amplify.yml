@@ -6,9 +6,10 @@ frontend:
         - node -v
         - npm --version
         - npm ci
+        - npm i -g webpack
     build:
       commands:
-        - webpack --config webpack.prod.config.js
+        - npm run build
   artifacts:
     # IMPORTANT - Please verify your build output directory
     baseDirectory: /
