@@ -7,7 +7,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.resolve(__dirname, 'build'),
-    publicPath: '/',
+    publicPath: '/build/',
     filename: 'index.js'
   },
 
@@ -28,9 +28,9 @@ module.exports = {
         ]
       },
       {
-        test: /\.m?js$/,
-        //include: path.resolve(__dirname, 'src'),
-        exclude: [/(node_modules|bower_components|build)/],
+        test: /\.js$/,
+        include: path.resolve(__dirname, 'src'),
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
