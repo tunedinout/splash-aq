@@ -28,6 +28,7 @@
   "scripts": {
     "start": "webpack-dev-server --mode production",
     "heroku-prebuild": "npm ci",
-    "heroku-postbuild": "webpack -p"
+    "heroku-postbuild": "webpack -p",
+    "build": "webpack -p"
   }
 }
