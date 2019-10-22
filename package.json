@@ -27,6 +27,6 @@
   "devDependencies": {},
   "scripts": {
     "start": "webpack-dev-server --mode production",
-    "build": "webpack --config webpack.config.js"
+    "heroku-postbuild": "webpack -p"
   }
 }
