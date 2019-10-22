@@ -1,6 +1,5 @@
-const HtmlWebpackPlugin = require("html-webpack-plugin")
-var path = require('path');
-
+const path = require('path');
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 console.log('build started');
 
 module.exports = {
@@ -30,7 +29,7 @@ module.exports = {
       {
         test: /\.(js|jsx|ts|tsx)$/,
         include: path.resolve(__dirname, 'src'),
-        exclude: /(node_modules|bower_components|build)/,
+        exclude: [/(node_modules|bower_components|build)/],
         use: {
           loader: require.resolve('babel-loader'),
           options: {
