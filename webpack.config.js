@@ -27,15 +27,15 @@ module.exports = {
         ]
       },
       {
-        test: /\.(js|jsx|ts|tsx)$/,
-        include: path.resolve(__dirname, 'src'),
+        test: /\.m?js$/,
+        //include: path.resolve(__dirname, 'src'),
         exclude: [/(node_modules|bower_components|build)/],
         use: {
-          loader: require.resolve('babel-loader'),
+          loader: 'babel-loader',
           options: {
             presets: [
-              require.resolve("@babel/preset-env"),
-              require.resolve("@babel/preset-react")
+              "@babel/preset-env",
+              "@babel/preset-react"
             ],
             plugins: [
               "@babel/plugin-proposal-object-rest-spread",
