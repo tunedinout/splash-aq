@@ -20,15 +20,6 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.html$/,
-        //we we add exclude : /node_modules/ --> the code fails ???
-        use: [
-          {
-            loader: "html-loader"
-          }
-        ]
-      },
-      {
         test: /\.js$/,
         //include: path.resolve(__dirname, 'src'),
         exclude: /node_modules/,
