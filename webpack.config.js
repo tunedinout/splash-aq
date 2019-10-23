@@ -21,6 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
+        exclude: /node_modules/,
         use: [
           {
             loader: "html-loader"
@@ -30,7 +31,7 @@ module.exports = {
       {
         test: /\.js$/,
         //include: path.resolve(__dirname, 'src'),
-        exclude: /(node_modules|build)/,
+        exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
           options: {
@@ -48,6 +49,7 @@ module.exports = {
 
       {
         test: /\.css$/,
+        exclude: /node_modules/,
         use: ['style-loader', 'css-loader']
       },
       {
