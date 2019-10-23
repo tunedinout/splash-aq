@@ -21,6 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.html$/,
+        //we we add exclude : /node_modules/ --> the code fails ???
         use: [
           {
             loader: "html-loader"
@@ -48,6 +49,7 @@ module.exports = {
 
       {
         test: /\.css$/,
+        //we we add exclude : /node_modules/ --> the code fails ???
         use: ['style-loader', 'css-loader']
       },
       {
